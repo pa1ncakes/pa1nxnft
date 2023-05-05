@@ -43,7 +43,7 @@ const Row = styled.div`
   margin: 2rem 0;
   display: flex;
 
-  animation: ${move} linear infinite ${props => props.direction};
+  animation: 20s ${move} linear infinite ${props => props.direction};
 `
 const ImgContainer = styled.div`
   width: 15rem;
