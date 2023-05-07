@@ -15,7 +15,7 @@ const LogoText = styled.h1`
 const Logo = () => {
   return (
     <LogoText>
-      <Link to="/">P1CxNFT</Link>
+      <Link to="/">xNFT</Link>
     </LogoText>
   )
 }

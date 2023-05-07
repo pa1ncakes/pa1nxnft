@@ -11,6 +11,7 @@ import img7 from "../../assets/Nfts/bighead-7.svg"
 import img8 from "../../assets/Nfts/bighead-8.svg"
 import img9 from "../../assets/Nfts/bighead-9.svg"
 import img10 from "../../assets/Nfts/bighead-10.svg"
+import ConfettiComponent from "../Confetti"
 
 const Section = styled.section`
   min-height: 100vh;
@@ -48,6 +49,9 @@ const Item = styled.div`
   position: relative;
   border: 2px solid ${props => props.theme.text};
   border-radius: 20px;
+  z-index: 5;
+
+  backdrop-filter: blur(4px);
 
   &:hover {
     img {
@@ -105,6 +109,7 @@ const MemberComponent = ({ img, name = " ", position = " " }) => {
 const Team = () => {
   return (
     <Section>
+      <ConfettiComponent />
       <Title>Team</Title>
       <Container>
         <MemberComponent img={img1} name="SKYBLAZE" position="CEO" />
