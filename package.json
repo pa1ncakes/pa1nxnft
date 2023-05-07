@@ -1,5 +1,6 @@
 {
   "name": "the-weirdos-starter-code",
+  "homepage": "http://www.rajtarun.me/pa1nxnft",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,10 +22,13 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "react-scripts": "5.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
