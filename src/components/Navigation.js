@@ -21,13 +21,13 @@ const NavBar = styled.nav`
   }
 
   @media (max-width: 64em) {
-
     .desktop {
       display: none;
     }
     .mobile {
       display: inline-block;
     }
+  }
 `
 
 const Menu = styled.ul`

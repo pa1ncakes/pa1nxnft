@@ -14,7 +14,7 @@ const Up = styled.div`
   position: fixed;
   display: none;
   bottom: 2rem;
-  right: 2rem;
+  right: 1rem;
   cursor: pointer;
   justify-content: center;
   align-items: center;

@@ -10,8 +10,8 @@ const VideoContainer = styled.div`
   }
 
   @media (max-width: 64em) {
-    min-width : 40vh;
-    
+    min-width: 40vh;
+  }
 `
 const CoverVideo = () => {
   return (

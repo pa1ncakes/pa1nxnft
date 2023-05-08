@@ -3,7 +3,6 @@ import styled, { keyframes } from "styled-components"
 import Vector from "../Icons/Vector"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-import { clearConfigCache } from "prettier"
 
 const VectorContainer = styled.div`
   position: absolute;
