@@ -9,6 +9,7 @@ import Team from "./components/section/Team"
 import Faq from "./components/section/Faq"
 import Footer from "./components/Footer"
 import About from "./components/section/About"
+import ScrollToTop from "./components/ScrollToTop"
 function App() {
   return (
     <>
@@ -22,7 +23,7 @@ function App() {
         <Team />
         <Faq />
         <Footer />
-        Appfile
+        <ScrollToTop />
       </ThemeProvider>
     </>
   )
