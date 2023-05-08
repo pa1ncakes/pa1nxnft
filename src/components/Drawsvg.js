@@ -6,21 +6,28 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { clearConfigCache } from "prettier"
 
 const VectorContainer = styled.div`
-position: absolute;
-top :0.5rem;
-left :50%;
-transform: translateX(-50%);
-width: 100%;
-height: 100%;
-overflow: hidden;
+  position: absolute;
+  top: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 
-svg {
+  svg {
+    display: inline-block;
     width: 100%;
     height: 100%;
+  }
+  @media (max-width: 48em) {
+    left: 1rem;
+  }
 `
 const Bounce = keyframes`
 from { transform: translateX(-50%) scale(0.5); }
 to { transform: translateX(-50%) scale(1); }
+
+
 `
 const Ball = styled.div`
   position: absolute;
@@ -32,6 +39,10 @@ const Ball = styled.div`
   border-radius: 50%;
   background-color: ${props => props.theme.text};
   animation: ${Bounce} 0.5s linear infinite alternate;
+
+  @media (max-width: 48em) {
+    left: 1rem;
+  }
 `
 
 const Drawsvg = () => {

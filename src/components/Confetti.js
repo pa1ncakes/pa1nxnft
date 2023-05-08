@@ -8,7 +8,7 @@ const ConfettiComponent = () => {
     <Confetti
       numberOfPieces={150}
       gravity={0.01}
-      width={width}
+      width={width * 0.7}
       height={height * 1.5}
     />
   )

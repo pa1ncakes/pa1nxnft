@@ -12,7 +12,7 @@ const Up = styled.div`
   background-color: ${props => props.theme.body};
   font-size: ${props => props.theme.fontxl};
   position: fixed;
-  display: flex;
+  display: none;
   bottom: 2rem;
   right: 2rem;
   cursor: pointer;
@@ -39,17 +39,15 @@ const ScrollToTop = () => {
       behavior: "smooth",
       block: "start",
       inline: "nearest",
-    })}
-    useLayoutEffect(() => {
-      if (y > 200) {
-        ref.current.style.display = "flex"
-      } else {
-        ref.current.style.display = "none"
-      }
-    }, [y])
-
-   
+    })
   }
+  useLayoutEffect(() => {
+    if (y > 200) {
+      ref.current.style.display = "flex"
+    } else {
+      ref.current.style.display = "none"
+    }
+  }, [y])
 
   return (
     <Up ref={ref} onClick={() => ToTop()}>
@@ -57,5 +55,4 @@ const ScrollToTop = () => {
     </Up>
   )
 }
-
 export default ScrollToTop

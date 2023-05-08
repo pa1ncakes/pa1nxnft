@@ -9,6 +9,10 @@ const Container = styled.div`
   flex-direction: column;
   border-bottom: 1px solid ${props => props.theme.carouselColor};
   margin: 3rem 0;
+
+  @media (max-width: 48em) {
+    margin: 2rem 0;
+  }
 `
 const Title = styled.div`
   font-size: ${props => props.theme.fontsm};
@@ -35,6 +39,10 @@ const Indicator = styled.div`
   align-items: right;
   font-size: ${props => props.theme.fontxxl};
   color: ${props => `rgba(${props.theme.bodyRgba},0.9)`};
+
+  @media (max-width: 48em) {
+    font-size: ${props => props.theme.fontxl};
+  }
 `
 const Accordion = ({ title, children }) => {
   const [collapse, setCollapse] = useState(false)
